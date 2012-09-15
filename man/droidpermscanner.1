@@ -1,0 +1,77 @@
+.TH droidpermscanner 1 "September 2012" Linux "User Manual"
+
+.SH NAME
+droidpermscanner \- A tool to assess Android's Java source and determines permissions as needed for insertion into AndroidManifest.xml.
+
+.SH SYNOPSIS
+.B droidpermscanner
+[[ \-s, \-\-scan ] 
+.I source_directory 
+]
+[[ \-h, \-\-help ]] [[ \-v, \-\-version ]]
+
+.SH DESCRIPTION
+.PP
+.B droidpermscanner
+scans through Android Java source code and based on the lexical keywords through-out the Java source code, then attempts to deduce the appropriate permissions required for the Android application.
+
+.SH OPTIONS
+.IP \-s
+Specify the source directory path to the Android's Java source. The long option equivalent is 
+.B --scan
+
+.IP \-h
+Display the help screen. The long option equivalent is
+.B --help
+
+.IP \-v
+Display the version of droidpermscanner. The long option equivalent is
+.B --version
+
+.SH ENVIRONMENT
+droidpermscanner requires access to the Android Java sources only. And it does not, in any way, touch the sources nor tamper with it. It is a "read-only" lexical scan that does not interfere with the source code of said Android's Java application.
+
+.SH RESOURCES
+.PP
+droidpermscanner requires read-access to the source directory.
+
+.SH DIAGNOSTICS
+The output of running droidpermscanner is as shown, by specifiying the command line
+.B /home/foo/droidpermscanner/droidpermscanner -s /home/foo/workspace/AndroidApp/src 
+
+.PP 
+=> BEGIN SCANNING PATH: /home/foo/workspace/AndroidApp/src...
+.PP
+Scanning: /home/foo/workspace/AndroidApp/src/com/foo/Activity1.java
+.PP
+Scanning: /home/foo/workspace/AndroidApp/src/com/foo/Activity2.java
+.PP 
+=> END SCANNING...
+.PP 
+=> RESULT(S):
+.PP 
+<uses-permission android:name="READ_CONTACTS" />
+.PP
+=> Total POSSIBLE permissions required: 1
+.PP
+PLEASE DOUBLE-CHECK to VERIFY that the above permissions ARE required!
+
+.PP
+You, as a Android Programmer, takes responsibility to ensure that the permission(s) 
+.B are 
+indeed required.
+
+.SH COPYRIGHT
+droidpermscanner is Copyright (c) 2012, Tom Brennan.
+
+This program is free software; you can redistribute it and/or modify it under the terms of the GNU General Public License as published by the Free Software Foundation; either version 2 of the License, or (at your option) any later version.
+
+This program is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the GNU General Public License for more details.
+
+You should have recieved a copy of the GNU General Public License along with this program; if not, write to the Free Software Foundation, Inc., 675 Mass Ave, Cambridge, MA 02139, USA.
+
+.SH BUGS
+Please report any bug(s) to tommie.brennan@gmail.com
+
+.SH AUTHORS
+Tom Brennan

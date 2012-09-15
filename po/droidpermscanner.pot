@@ -1,0 +1,162 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR Tom Brennan
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: droidpermscanner 1.0\n"
+"Report-Msgid-Bugs-To: tommie.brennan@gmail.com\n"
+"POT-Creation-Date: 2012-09-15 17:45+0100\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=CHARSET\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: droidpermscanner.l:134
+#, c-format
+msgid "No options given!\n"
+msgstr ""
+
+#: droidpermscanner.l:137
+#, c-format
+msgid "=> BEGIN SCANNING PATH: %s...\n"
+msgstr ""
+
+#: src/droidpermscanner_utils.c:23
+#, c-format
+msgid ""
+"%s - Android's Java source code scanner and deduces appropriate "
+"AndroidManifest.xml's permissions required\n"
+"\n"
+msgstr ""
+
+#: src/droidpermscanner_utils.c:24
+#, c-format
+msgid ""
+"Usage: %s [-s path] [-h] [-v]\n"
+"\n"
+msgstr ""
+
+#: src/droidpermscanner_utils.c:25
+#, c-format
+msgid "-s, --scan   \tscan specified directory source\n"
+msgstr ""
+
+#: src/droidpermscanner_utils.c:26
+#, c-format
+msgid "-v, --version\tprint version then exit\n"
+msgstr ""
+
+#: src/droidpermscanner_utils.c:27
+#, c-format
+msgid "-h, --help   \tprint this help and exit\n"
+msgstr ""
+
+#: src/droidpermscanner_utils.c:28
+#, c-format
+msgid ""
+"\n"
+"Report bugs to <%s>\n"
+"\n"
+msgstr ""
+
+#: src/droidpermscanner_utils.c:32
+#, c-format
+msgid "%s.\n"
+msgstr ""
+
+#: src/droidpermscanner_utils.c:33
+#, c-format
+msgid "Copyright (C) 2012 Tom Brennan\n"
+msgstr ""
+
+#: src/droidpermscanner_utils.c:34
+#, c-format
+msgid ""
+"License GPLv3: GNU GPL Version 3 or later <http://gnu.org/licenses/gpl."
+"html>\n"
+msgstr ""
+
+#: src/droidpermscanner_utils.c:35
+#, c-format
+msgid "This is free software: You are free to change and redistribute it.\n"
+msgstr ""
+
+#: src/droidpermscanner_utils.c:36
+#, c-format
+msgid ""
+"There is NO WARRANTY, to the extent permitted by law.\n"
+"\n"
+"Written by Tom Brennan <%s>\n"
+"\n"
+msgstr ""
+
+#: src/droidpermscanner_main.c:75
+#, c-format
+msgid "Error @ %s:%d:scan(...) - Failed to open %s"
+msgstr ""
+
+#: src/droidpermscanner_main.c:80
+#, c-format
+msgid "Error @ %s:%d:scan(...) - Failed to malloc(...)"
+msgstr ""
+
+#: src/droidpermscanner_main.c:85
+#, c-format
+msgid "Error @ %s:%d:scan(...) - Failed to get stat on %s"
+msgstr ""
+
+#: src/droidpermscanner_main.c:95
+#, c-format
+msgid "Scanning: %s\n"
+msgstr ""
+
+#: src/droidpermscanner_main.c:96
+#, c-format
+msgid "Error @ %s:%d:scan(...) - Failed to open %s for scanning"
+msgstr ""
+
+#: src/droidpermscanner_main.c:105
+#, c-format
+msgid "Error @ %s:%d:scan(...) - Failed to close %s"
+msgstr ""
+
+#: src/droidpermscanner_main.c:109
+#, c-format
+msgid ""
+"=> END SCANNING...\n"
+"\n"
+msgstr ""
+
+#: src/droidpermscanner_main.c:111
+#, c-format
+msgid "=> RESULT(S):\n"
+msgstr ""
+
+#: src/droidpermscanner_main.c:132
+#, c-format
+msgid ""
+"\n"
+"=> Total POSSIBLE permissions required: %d\n"
+msgstr ""
+
+#: src/droidpermscanner_main.c:133
+#, c-format
+msgid ""
+"\n"
+"PLEASE DOUBLE-CHECK to VERIFY that the above permissions ARE required!\n"
+"\n"
+msgstr ""
+
+#: src/droidpermscanner_main.c:135
+#, c-format
+msgid ""
+"\n"
+"NO recognized possible permissions required!\n"
+"\n"
+msgstr ""

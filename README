@@ -1,0 +1,5 @@
+A fast lexical scanner that parses Android's Java Source and determines the necessary permissions required for the AndroidManifest.xml in the Android project.
+
+The binary scans through all of the sources using the option --scan [path].
+
+Initial version.

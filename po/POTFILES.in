@@ -1,0 +1,4 @@
+# List of source files which contain translatable strings.
+src/droidpermscanner.c
+src/droidpermscanner_utils.c
+src/droidpermscanner_main.c
