@@ -1,0 +1,39 @@
+.SUFFIXES: .c.o .l.c
+
+LEX = flex
+CC = cc
+
+INCLUDE = -I/usr/include -I/usr/sys/include
+# Comment out one or the other, mutually exclusive
+#CFLAGS = -g # Debugging info
+CFLAGS = -O2 # Optimize code
+
+LIBS = -L/usr/lib -L/usr/sys/lib 
+
+FLEX_FILE_SRC = droidpermscanner.l
+FLEX_GEN_C_SRC = droidpermscanner_lex.c
+
+FILES = droidpermscanner_lex.o droidpermscanner_utils.o droidpermscanner_main.o
+
+APP = droidpermscanner
+
+.c.o:
+	$(CC) $(INCLUDE) $(CFLAGS) -c $<
+
+$(FLEX_GEN_C_SRC) : $(FLEX_FILE_SRC)
+	$(LEX) $(LFLAGS) -o $@ $^
+
+all : $(APP)
+
+$(APP) : $(FILES)
+	$(CC) -o $@ $(FILES) $(LIBS) $(CFLAGS)
+
+clobber : clean mrproper
+
+clean:
+	rm -rf $(FILES) $(FLEX_GEN_C_SRC)
+
+mrproper:
+	rm -rf $(APP)
+
+

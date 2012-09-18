@@ -1,0 +1,37 @@
+# depslib dependency file v1.0
+1347730901 source:c:\cb\droidpermscanner\src\droidpermscanner_main.c
+	"../include/droidpermscanner.h"
+
+1347999125 c:\cb\droidpermscanner\include\droidpermscanner.h
+	<stdio.h>
+	<stdlib.h>
+	<unistd.h>
+	<string.h>
+	<stdarg.h>
+	<getopt.h>
+	<dirent.h>
+	<sys/stat.h>
+	"config.h"
+
+1347731100 c:\cb\droidpermscanner\include\config.h
+
+1347663347 c:\cb\droidpermscanner\include\gettext.h
+	<libintl.h>
+	<locale.h>
+	<cstdlib>
+	<libintl.h>
+	<string.h>
+	<stdlib.h>
+
+1347999190 source:c:\cb\droidpermscanner\src\droidpermscanner_utils.c
+	"../include/droidpermscanner.h"
+
+1347999215 source:c:\cb\droidpermscanner\src\droidpermscanner.c
+	<stdio.h>
+	<string.h>
+	<errno.h>
+	<stdlib.h>
+	<inttypes.h>
+	"../include/droidpermscanner.h"
+	<unistd.h>
+

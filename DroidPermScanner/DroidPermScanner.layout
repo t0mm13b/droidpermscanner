@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<CodeBlocks_layout_file>
+	<ActiveTarget name="Release" />
+	<File name="include\config.h" open="0" top="0" tabpos="0">
+		<Cursor position="2604" topLine="42" />
+	</File>
+	<File name="include\droidpermscanner.h" open="0" top="0" tabpos="0">
+		<Cursor position="1021" topLine="48" />
+	</File>
+	<File name="src\droidpermscanner.c" open="1" top="1" tabpos="0">
+		<Cursor position="73526" topLine="2347" />
+	</File>
+	<File name="src\droidpermscanner_main.c" open="0" top="0" tabpos="0">
+		<Cursor position="78" topLine="18" />
+	</File>
+	<File name="src\droidpermscanner_utils.c" open="0" top="0" tabpos="0">
+		<Cursor position="1810" topLine="34" />
+	</File>
+</CodeBlocks_layout_file>
