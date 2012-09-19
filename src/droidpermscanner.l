@@ -137,5 +137,6 @@ int main(int argc, char **argv){
 	if (scan(scan_path)){
 		print_permissions();
 	}
+	if (self_name) free(self_name);
     return 0;
 }

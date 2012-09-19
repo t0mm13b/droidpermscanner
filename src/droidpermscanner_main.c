@@ -65,6 +65,7 @@ static void permissions_lookup(int *count_ptr, int mask_perms){
 			}
 		}while (tokenptr);
 	}
+	if (permission_str) free(permission_str);
 }
 int scan(const char *pathstart){
 	DIR *scandir = NULL;
