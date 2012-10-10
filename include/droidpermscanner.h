@@ -27,7 +27,9 @@
 #include <getopt.h>
 #include <dirent.h>
 #include <sys/stat.h>
+#ifdef __gnu_linux__
 #include <error.h>
+#endif
 #include <config.h>
 #include <locale.h>
 #include "gettext.h"
